@@ -1,0 +1,122 @@
+header {
+    display: flex;
+    width: 1100px;
+    justify-content: center;
+    margin: auto;
+}
+
+header > img {
+    width: 100%;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.firstBox {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.firstBox > div {
+    max-width: calc(1100px / 3 - 20px);
+}
+
+.firstBox > div > img {
+    width: 100%;
+}
+
+.secondBox {
+    display: flex;
+    justify-content: center;
+}
+
+.secondBox > img {
+    width: 100%;
+}
+
+.secondBox > h1 {
+    margin-top: 300px;
+    position: absolute;
+    left: 50%;
+    font-size: 40px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.thirdBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thirdBox > div {
+    margin: 30px 0 30px 0;
+}
+
+.thirdBox > .article1, .article3 {
+    display: flex;
+}
+
+.thirdBox > .article2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.thirdBox img {
+    width: 550px;
+    border-radius: 50%;
+}
+
+.thirdBox p {
+    justify-content: center;
+    align-content: center;
+    padding-left: 20px;
+}
+
+.fourthBox > .content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.fourthBox > h1 {
+    text-align: center;
+}
+
+.fourthBox > .content > div > img {
+    max-width: calc(1100px / 2 - 20px);
+}
+
+.fourthBox > .content > div > h2 {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 1100px;
+    margin: auto;
+}
+
+footer img {
+    width: 100px;
+} 
+footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .autor {
+    width: 200px;
+}
