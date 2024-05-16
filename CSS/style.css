@@ -1,12 +1,11 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    overflow-x: hidden;
 }
 
 header {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     margin: auto;
 }
@@ -39,24 +38,18 @@ main {
 }
 
 .secondBox {
-    position: relative;
-}
-
-.secondBox > img {
-    width: 100%;
+    background-image: url('../images/secondBox.webp');
     height: 100vh;
-    object-fit: cover;
-    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secondBox > h1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-size: 40px;
+    font-size: 5rem;
     color: #fff;
-    transform: translate(-50%, -50%);
-    z-index: 100;
 }
 
 .thirdBox {
@@ -69,17 +62,17 @@ main {
     margin: 30px 0 30px 0;
 }
 
-.thirdBox > .article1, .article3 {
+.thirdBox > .article {
     display: flex;
 }
 
-.thirdBox > .article2 {
+.thirdBox > .reverse {
     display: flex;
     flex-direction: row-reverse;
 }
 
 .thirdBox img {
-    width: 550px;
+    width: 50%;
     border-radius: 50%;
 }
 
@@ -127,4 +120,15 @@ footer > div {
 
 footer .autor {
     width: 200px;
+}
+
+/* ------------------ Responsive ------------------ */
+
+@media only screen and (max-width: 1090px) {
+    .firstBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
