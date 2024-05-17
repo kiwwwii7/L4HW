@@ -131,4 +131,15 @@ footer .autor {
         justify-content: center;
         align-items: center;
     }
+
+    .article, .article.reverse {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thirdBox p {
+        width: 50%;
+    }
 }
